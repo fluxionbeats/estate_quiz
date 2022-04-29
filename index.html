@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="rus">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estate Quiz</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+
+<body>
+    <nav class="header">
+        <div class="container">
+            <div class="header__inner">
+                <!-- <a href="" class="header__logo">
+                    <img src="./img/logo.svg" alt="" class="logo">
+                </a> -->
+                <div class="header__info">
+                    <div class="header__info__info">Для звонков по России</div>
+                    <a href="tel:+79256349786" class="header__phone">+7 925 634-97-86</a>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+    <section class="quiz">
+        <div class="quiz__main-page quiz_opened-page">
+            <div class="container">
+                <h1 class="main-page__title title">
+                    Инвестируй в новостройки <br>Москвы
+                </h1>
+                <p class="main-page__subtitle subtitle">
+                    Подберём квартиру от 5 до 20 млн бесплатно
+                </p>
+                <button class="btn-white btn-main " id="btn-main">
+                    Пройти тест
+                </button>
+            </div>
+        </div>
+        <div class="quiz__budget">
+            <div class="container">
+                <h1 class="budget__title title">
+                    Ваш бюджет
+                </h1>
+                <div class="slider">
+                    <div class="container-slider">
+                        <div class="slider-track">
+                            <input type="range" min="5" max="20" value="5" id="slider-1" oninput="slideOne()">
+                            <input type="range" min="5" max="20" value="20" id="slider-2" oninput="slideTwo()">
+                        </div>
+                    </div>
+                    <div class="values">
+                        <div id="range1"></div>
+                        <span>&ndash;</span>
+                        <div id="range2"></div>
+                    </div>
+                    <div class="btn-budget">
+                        <button class="btn-white" id="btn-budget" type="submit">
+                            Далее
+                        </button>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <div class="quiz__rooms">
+            <div class="container">
+                <h1 class="rooms__title title">
+                    Количество комнат
+                </h1>
+                <div class="period-buttons">
+                    <div class="quiz-buttons">
+                        <button class="btn-choice">1 комната</button>
+                        <button class="btn-choice">2 комнаты</button>
+                        <button class="btn-choice"> 3 комнаты</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="quiz__pay-method">
+            <div class="container">
+                <h1 class="pay-method__title title">
+                    Наличные или ипотека
+                </h1>
+                <div class="pay-method-buttons">
+                    <div class="quiz-buttons">
+                        <button class="btn-choice btn-pay-method">Наличные</button>
+                        <button class="btn-choice btn-pay-method">Ипотека (0,01%)</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="quiz__period">
+            <div class="container">
+                <h1 class="period__title title">
+                    Срок инвестиций
+                </h1>
+                <div class="period-buttons">
+                    <div class="quiz-buttons">
+                        <button class="btn-choice btn-period">1 год</button>
+                        <button class="btn-choice btn-period">2 года</button>
+                        <button class="btn-choice btn-period">3 года</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="quiz__form">
+            <div class="container">
+                <h1 class="form__title title">
+                    Заполните форму
+                </h1>
+                <p class="form__subtitle subtitle">
+                    Мы расскажем вам о лучших предложениях Москвы
+                </p>
+                <form method="post" class="contact-form" id="form-5">
+                    <input type="tel" name="tel" placeholder="8-885-543-22-55" class="form__field" required>
+                    <input type="text" name="name" placeholder="Игорь" class="form__field form__field-name" required>
+                    <input type="submit" value="Отправить" class="btn-choice btn-choice__form">
+                </form>
+                <div class="flats">
+                    <div class="flats__info">
+                        <div class="flats__count">
+                            14
+                        </div>
+                        <span class="flats__text">
+                            квартир для вас
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="./script.js"></script>
+
+
+</body>
+
+</html>
