@@ -61,6 +61,7 @@ function nextQuestion() {
     let this_question = document.querySelector(".quiz_opened-page");
     let next_question = this_question.nextElementSibling;
     this_question.classList.remove("quiz_opened-page");
+    this_question.classList.add("quiz_passed-page");
     next_question.classList.add("quiz_opened-page");
     slide_num += 1;
 }
@@ -111,12 +112,12 @@ function parseButtonValue(button) {
 
 function sendData(values){
     const data = {
-        name: values.name,
-        tel: values.tel,
-        range: values.range.first + ' - ' + values.range.second,
-        rooms_count: values.rooms_count,
-        pay_method: values.pay_method,
-        period: values.period
+        "Имя": values.name,
+        "Телефон": values.tel,
+        "Бюджет": values.range.first + ' - ' + values.range.second,
+        "Количество комнат": values.rooms_count,
+        "Наличные / ипотека": values.pay_method,
+        "Срок инвестиций": values.period,
     }
     fetch('https://api.sheetmonkey.io/form/s2u9PhAYsBBV9GWexpvvyk', {
       method: 'POST',

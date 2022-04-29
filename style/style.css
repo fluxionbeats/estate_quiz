@@ -11,6 +11,8 @@ body {
     margin: 0;
     color: #fff;
     font-weight: 400;
+    overflow: hidden;
+   
 }
 
 a {
@@ -39,6 +41,7 @@ p {
     max-width: 1260px;
     margin: 0 auto;
     padding: 0px 30px;
+    overflow: hidden;
 }
 
 .header {
@@ -80,16 +83,28 @@ p {
     font-weight: 600;
 }
 
-.quiz {
+.quiz{
     padding-top: 3.77em;
+    display: flex;
 }
-.quiz > *{
-    display: none;
+.quiz__slide{
+    width: 100%;
+    position: absolute;
+    left: 100%;
+    opacity: 0;
+    transition: opacity 0.3s ease, all 0.7s ease;
 }
 .quiz_opened-page{
-    display: block;
+    width: 100%;
+    position: relative;
+    left: 0;
+    opacity: 1;
 }
-
+.quiz_passed-page{
+    position: absolute;
+    left: -100%;
+    opacity: 0;
+}
 .title {
     font-size: 1.94em;
 }
