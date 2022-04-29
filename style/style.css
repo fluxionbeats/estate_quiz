@@ -12,7 +12,6 @@ body {
     color: #fff;
     font-weight: 400;
     overflow: hidden;
-   
 }
 
 a {
@@ -58,7 +57,7 @@ p {
     justify-content: flex-end;
 }
 
-.header__logo {
+/* .header__logo {
     width: 70px;
     height: 70px;
 }
@@ -68,7 +67,7 @@ p {
     border-radius: 100%;
     background-color: #fff;
 
-}
+} */
 
 .header__info {
     display: flex;
@@ -85,14 +84,13 @@ p {
 
 .quiz{
     padding-top: 3.77em;
-    display: flex;
 }
 .quiz__slide{
     width: 100%;
     position: absolute;
-    left: 100%;
+    right: 0;
     opacity: 0;
-    transition: opacity 0.3s ease, all 0.7s ease;
+    transition: all 0.7s ease;
 }
 .quiz_opened-page{
     width: 100%;
@@ -102,7 +100,6 @@ p {
 }
 .quiz_passed-page{
     position: absolute;
-    left: -100%;
     opacity: 0;
 }
 .title {
@@ -341,21 +338,41 @@ input[type="tel"]:focus {
     .btn-choice{
         margin-bottom: 1.4em;
     }
+    .form__field{
+        font-size: 1em;
+        padding: 0.6em 1.5em;
+    }
+    .btn-choice{
+        font-size: 1em;
+        padding: 0.6em 1.25em;
+    }
+    .btn-white{
+        font-size: 1.2em;
+    }
+    .container-slider{
+        margin-bottom: 2.2em;
+    }
+    .values{
+        font-size: 1em;
+    }
 }
 
 @media screen and (max-width: 614px) {
     body{
-        font-size: 24px;
+        font-size: 28px;
     }
     input[type="range"]::-webkit-slider-thumb {
         height: 1.5em;
         width: 3em;
         margin-top: -7px;
     }
+    .header__info{
+        font-size: 0.7em;
+    }
 }
 @media screen and (max-width: 505px){
     body{
-        font-size: 20px;
+        font-size: 24px;
     }
     .container{
         padding: 0px 16px;
@@ -363,19 +380,37 @@ input[type="tel"]:focus {
 }
 @media screen and (max-width: 430px){
     body{
-        font-size: 16px;
+        font-size: 22px;
     }
     input[type="range"]::-webkit-slider-thumb {
         height: 1em;
         width: 2em;
         margin-top: -4px;
     }
-}
-@media screen and (max-width: 330px){
-    body{
-        font-size: 14px;
+    .form__field{
+        padding: 0.6em 1em;
     }
-    .container{
-        padding: 0px 10px;
+    .header__info{
+        font-size: 0.6em;
+    }
+}
+@media screen and (max-width: 360px){
+    body{
+        font-size: 20px;
+    }
+    .btn-choice{
+        padding: 0.7em 1.25em;
+    }
+    .form__field{
+        max-width: 13em;
+        padding: 0.7em 1.3em;
+    }
+}
+@media screen and (max-width: 303px){
+    body{
+        font-size: 16px;
+    }
+    .header__info{
+        font-size: 0.7em;
     }
 }
