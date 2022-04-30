@@ -58,6 +58,8 @@ function fillColor() {
 let slide_num = 0;
 
 function nextQuestion() {
+    let wrapper = document.querySelector(".quiz__wrapper");
+    wrapper.style.left = parseInt(wrapper.style.left || 0) - window.screen.width +"px";
     let this_question = document.querySelector(".quiz_opened-page");
     let next_question = this_question.nextElementSibling;
     this_question.classList.remove("quiz_opened-page");
