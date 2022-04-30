@@ -1,6 +1,8 @@
 body {
     background-image: url(../img/background-img.jpg);
-    background-size: cover;
+    background-size:cover;
+    background-position-x: center;
+    background-position-y: center;
     background-repeat: no-repeat;
     font-family: "Montserrat", sans-serif;
     font-size: 30px;
