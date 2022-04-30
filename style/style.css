@@ -2,7 +2,6 @@ body {
     background-image: url(../img/background-img.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    
     font-family: "Montserrat", sans-serif;
     font-size: 30px;
     margin: 0;
@@ -37,7 +36,6 @@ p {
     max-width: 1260px;
     margin: 0 auto;
     padding: 0px 30px;
-    overflow: hidden;
 }
 
 .header {
