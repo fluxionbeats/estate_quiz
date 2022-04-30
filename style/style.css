@@ -127,10 +127,12 @@ p {
     background-color: #fff;
     border-radius: 2.13em;
     cursor: pointer;
+    color: #000;
 }
 
 .btn-main {
     margin-top: 2.36em;
+    color: #000;
 }
 
 .footer {
