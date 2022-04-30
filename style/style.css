@@ -251,6 +251,12 @@ input[type="range"]:active::-webkit-slider-thumb {
     flex-wrap: wrap;
     margin-top: 2.5em;
 }
+.quiz__success{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 3em;
+}
 .policy{
     font-size: 12px;
     color: #fff;
