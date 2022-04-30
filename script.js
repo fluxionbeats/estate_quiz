@@ -65,8 +65,6 @@ function nextQuestion() {
     next_question.classList.add("quiz_opened-page");
     slide_num += 1;
     if(slide_num == 6){
-        let header_info = document.querySelector(".header__info");
-        header_info.classList.add("info_hidden");
         setTimeout(function(){location.reload();}, 6000);
     }
 }
