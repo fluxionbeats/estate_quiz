@@ -74,8 +74,12 @@ p {
     align-items: center;
     justify-content: flex-end;
     font-size: 0.83em;
+    transition: all 0.7s ease;
 }
 
+.info_hidden{
+    opacity: 0;
+}
 .header__phone {
     margin-left: 1.38em;
     color: #fff;
@@ -84,11 +88,15 @@ p {
 
 .quiz{
     padding-top: 3.77em;
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
 }
 .quiz__slide{
     width: 100%;
     position: absolute;
-    right: 0;
+    left: 100%;
     opacity: 0;
     transition: all 0.7s ease;
 }
@@ -101,6 +109,7 @@ p {
 .quiz_passed-page{
     position: absolute;
     opacity: 0;
+    left: -100%;
 }
 .title {
     font-size: 1.94em;

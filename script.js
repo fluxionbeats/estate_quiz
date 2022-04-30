@@ -64,6 +64,11 @@ function nextQuestion() {
     this_question.classList.add("quiz_passed-page");
     next_question.classList.add("quiz_opened-page");
     slide_num += 1;
+    if(slide_num == 6){
+        setTimeout(function(){location.reload();}, 6000);
+        let header_info = document.querySelector(".header__info");
+        header_info.classList.add("info_hidden");
+    }
 }
 let form = document.forms[0];
 
@@ -77,6 +82,7 @@ function retrieveFormValues(event) {
     values.tel = tel.value;
     sendData(values);
     form.reset();
+    nextQuestion();
 }
 
 form.addEventListener("submit", retrieveFormValues);
@@ -91,6 +97,7 @@ for (var i = 0; i < buttons.length; i++) {
             switch (slide_num) {
                 case 2:
                     values.rooms_count = parseButtonValue(this);
+                    setFlatsValue();
                     break;
                 case 3:
                     values.pay_method = parseButtonValue(this);
@@ -128,4 +135,17 @@ function sendData(values){
     }).then((result) => {
       // Handle the result
     });
+}
+
+const time = 10000;
+const step = 1; 
+
+function setFlatsValue(){
+    let flats_map = {
+        "1" : 15,
+        "2" : 12,
+        "3" : 8
+    }
+    let flats_count = document.querySelector(".flats__count");
+    flats_count.innerHTML = flats_map[values.rooms_count[0]];
 }
