@@ -251,6 +251,10 @@ input[type="range"]:active::-webkit-slider-thumb {
     margin-top: 2.5em;
 }
 
+.policy{
+    font-size: 12px;
+    color: #fff;
+}
 .btn-choice {
     font-size: 0.83em;
     padding: 0.45em 1.25em;
@@ -263,6 +267,9 @@ input[type="range"]:active::-webkit-slider-thumb {
     border: 0; 
     max-width: 12em;
     width: 100%;
+}
+.btn-choice.btn-form{
+    margin-bottom: 0.2em;
 }
 
 .btn-choice:last-child {
@@ -301,8 +308,6 @@ input[type="tel"]:focus {
 .flats{
     display: flex;
     justify-content: flex-end;
-    margin-top: 2.22em;
-    margin-right: 10%;
 }
 .flats__info{
     text-align: center;
@@ -311,6 +316,9 @@ input[type="tel"]:focus {
     color: #FF9900;
     font-weight: 600;
     font-size: 3em;
+}
+.flats__text{
+    font-size: 0.7em;
 }
 
 
@@ -324,9 +332,6 @@ input[type="tel"]:focus {
     .form__field{
         margin-bottom: 1em;
     }    
-    .flats{
-        margin-top: 0.5em;
-    }
 }
 @media screen and (max-width: 1075px) {
     .quiz-buttons{
@@ -391,6 +396,9 @@ input[type="tel"]:focus {
     .container{
         padding: 0px 16px;
     }
+    .form__subtitle{
+        font-size: 0.8em;
+    }
 }
 @media screen and (max-width: 430px){
     body{
@@ -418,6 +426,9 @@ input[type="tel"]:focus {
     .form__field{
         max-width: 11em;
         padding: 0.5em 1.3em;
+    }
+    .btn-white{
+        font-size: 1em;
     }
 }
 @media screen and (max-width: 303px){
